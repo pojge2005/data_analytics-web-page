@@ -1,0 +1,57 @@
+
+
+
+import React from 'react';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import Analyzer from './components/Analyzer';
+
+
+export default function App() {
+return (
+<Container maxWidth="md" style={{ paddingTop: 32, paddingBottom: 32 }}>
+<Paper elevation={3} style={{ padding: 24 }}>
+<Typography variant="h4" component="h1" gutterBottom>
+📊 Data Analytics Dashboard
+</Typography>
+<Typography variant="body2" color="textSecondary" gutterBottom>
+Upload a CSV file to run quick data analysis (summary stats + simple charts).
+</Typography>
+
+
+<Box mt={3}>
+<Analyzer />
+</Box>
+</Paper>
+</Container>
+);
+}
+```
+
+
+---import logo from './logo.svg';
+import './Appfunction App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
